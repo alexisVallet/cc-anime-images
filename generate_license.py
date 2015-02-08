@@ -31,5 +31,5 @@ if __name__ == "__main__":
                     url=info['url'],
                     license=license_names[info['license_type']]
                 )
-                output.write(formatted + os.linesep)
+                output.write(formatted + os.linesep + os.linesep)
 
