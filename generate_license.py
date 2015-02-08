@@ -24,7 +24,7 @@ if __name__ == "__main__":
             print json_fname
             with open(os.path.join(json_folder, json_fname)) as info_f:
                 info = json.load(info_f)
-                attribution = "'[{title}]({url})' by [{author}]({author}.deviantart.com) is licensed under {license}"
+                attribution = "'[{title}]({url})' by [{author}](http://{author}.deviantart.com) is licensed under {license}"
                 formatted = attribution.format(
                     title=info['title'],
                     author=info['author'],
